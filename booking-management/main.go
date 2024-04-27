@@ -2,7 +2,6 @@ package main
 
 import (
 	"booking-management/bootstrap"
-	_ "booking-management/docs"
 	"context"
 )
 

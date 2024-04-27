@@ -17,7 +17,7 @@ type HTTPServer struct {
 
 func NewHTTPServer(config config.Config, r *mux.Router) HTTPServer {
 
-	address := "localhost:8000"
+	address := config.App.Host + ":" + string(rune(config.App.Port))
 
 	server := &http.Server{
 		Addr:         address,
